@@ -38,29 +38,5 @@ static void Main(string[] args)
         else if (comando.StartsWith("multiplicar "))
         {
             double termino = double.Parse(comando.Substring(12));
-            calculadora.Multiplicar(termino);
-        }
-        else if (comando.StartsWith("dividir "))
-        {
-            double termino = double.Parse(comando.Substring(8));
-            calculadora.Dividir(termino);
-        }
-        else if (comando == "limpiar")
-        {
-            calculadora.Limpiar();
-        }
-        else if (comando == "resultado")
-        {
-            Console.WriteLine($"Resultado: {calculadora.Resultado}");
-        }
-        else if (comando != "exit")
-        {
-            Console.WriteLine("Comando inválido.");
-        }
-
-    } while (comando != "exit");
-
-    Console.WriteLine("¡Hasta luego!");
-}
 
 
