@@ -2,41 +2,9 @@
 // Console.WriteLine("Hello, World!");
 
 using System;
-using EspacioCalculadora;
 
 
-static void Main(string[] args)
-{
-    Calculadora calculadora = new Calculadora();
-
-    Console.WriteLine("Calculadora");
-    Console.WriteLine("Ingrese los comandos de operación o 'exit' para salir.");
-
-    string comando;
-
-    // -> sumar 5
-    // -> restar 2
-    // -> dividir 2
-    // -> resultado
-    // Resultado: 1,5
-
-    do
-    {
-        Console.Write("-> ");
-        comando = Console.ReadLine();
-
-        if (comando.StartsWith("sumar "))
-        {
-            double termino = double.Parse(comando.Substring(6));
-            calculadora.Sumar(termino);
-        }
-        else if (comando.StartsWith("restar "))
-        {
-            double termino = double.Parse(comando.Substring(7));
-            calculadora.Restar(termino);
-        }
-        else if (comando.StartsWith("multiplicar "))
-        {
-            double termino = double.Parse(comando.Substring(12));
-
+static void Main(string[] args){
+    
+}
 
